@@ -1,5 +1,4 @@
-# Copyright (c) 2021 Itz-fork
-# Don't kang this else your dad is gae
+
 
 import os
 import shutil
@@ -40,7 +39,7 @@ GITHUB_REPO=InlineKeyboardMarkup(
                 ],
                 [
                     InlineKeyboardButton(
-                        "🆘 Support Group 🆘", url="https://t.me/Nexa_bots"
+                        "🆘 Support Group 🆘", url="https://t.me/bearzap"
                     )
                 ]
             ]
@@ -51,7 +50,7 @@ GITHUB_REPO=InlineKeyboardMarkup(
 async def megadl(_, message: Message):
     # Auth users only
     if message.from_user.id not in Config.AUTH_USERS:
-        await message.reply_text("**Sorry this bot isn't a Public Bot 🥺! But You can make your own bot ☺️, Click on Below Button!**", reply_markup=GITHUB_REPO)
+        await message.reply_text("**This bot only works in Niaz cloud leeching zone 😀/n bot created by @bearzap)
         return
     url = message.text
     userpath = str(message.from_user.id)
@@ -128,7 +127,7 @@ async def megadl(_, message: Message):
 async def nomegaurl(_, message: Message):
   # Auth users only
     if message.from_user.id not in Config.AUTH_USERS:
-        await message.reply_text("**Sorry this bot isn't a Public Bot 🥺! But You can make your own bot ☺️, Click on Below Button!**", reply_markup=GITHUB_REPO)
+        await message.reply_text("**This bot only works in Niaz cloud leeching zone )
         return
     else:
       await message.reply_text("**Sorry, I can't find a valid mega.nz url in your message! Can you check it again?")
